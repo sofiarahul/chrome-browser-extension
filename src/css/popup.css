@@ -1,0 +1,142 @@
+/* Variables */
+body {
+  --text-color: #111111;
+  --background-color: #FFFFFF;
+}
+
+body.dark-mode {
+  --text-color: #FFFFFF;
+  --background-color: #282828;
+}
+
+
+/* Styles */
+html, body {
+  font-family: "Lucida Sans";
+  font-size: 14px;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0px;
+  width: 384px;
+  background-color: var(--background-color);
+  transition-duration: 0.4s;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0;
+}
+
+img {
+  width: 30px;
+  vertical-align: text-bottom;
+  margin-right: 12px;
+}
+
+.modal-header {
+  align-items: center;
+  border-bottom: 0.5px solid #dadada;
+  padding: 16px;
+}
+
+.modal-content {
+  padding: 10px 22px;
+}
+
+
+.version {
+  font-size: 18px;
+}
+
+.button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+.button#help-button {
+  float: right;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: var(--background-color); 
+  color: var(--text-color); 
+  border: 3px solid var(--text-color);
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-top: 2px;
+  width: 30px;
+  height: 19px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--background-color);
+}
+
+input + .slider {
+  box-shadow: 0 0 3px var(--text-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+.slider.round {
+  border-radius: 19px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

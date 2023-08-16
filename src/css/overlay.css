@@ -1,0 +1,37 @@
+/* Variables */
+#definition-overlay {
+    --text-color: #111111;
+    --background-color: #FFFFFF;
+}
+
+#definition-overlay.dark-mode {
+    --text-color: #FFFFFF;
+    --background-color: #282828;
+}
+
+
+/* Styles */
+#definition-overlay {
+    display: none;
+    position: absolute;
+    padding: 15px 25px 15px 20px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px -2px;
+    transition-duration: 0.4s;
+}
+
+#definition-overlay > #acronym {
+    font-size: large;
+}
+
+#definition-overlay > #definitions-list {
+    font-size: small;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+#definition-overlay > #definitions-list > .definition {
+    margin-top: 5px;
+}

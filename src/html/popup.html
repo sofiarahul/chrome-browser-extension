@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acronym Helper</title>
+    <link rel="stylesheet" href="../css/popup.css">
+    <script src="../js/popup.js" defer></script>
+  </head>
+
+  <body>
+    <div class="modal-header">
+      <img src="../images/icons/icon128.png"/>
+      <h1>Acronym Helper</h1> 
+      <span class="version">(1.0.0)</span>
+      <button id="help-button" class="button">&#63;</button>
+    </div>
+    <div class="modal-content">
+      <ul>
+        <li>
+          <span>Languages:</span>
+          <input type="checkbox" id="english-checkbox" name="language" value="English" checked>
+          <label for="English">English</label>
+          <input type="checkbox" id="french-checkbox" name="language" value="French" checked>
+          <label for="French">French</label>
+        </li>
+        <li>
+          <span>Light/Dark Mode:</span>
+          <label class="switch">
+            <input id=dark-mode-switch type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </li>
+    </ol>
+  </body>
+</html>
